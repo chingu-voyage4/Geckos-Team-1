@@ -4,6 +4,18 @@
 	"description": "First extension",
 	"version": "1.0",
 	"author": "Shradha Katyal",
+	"background":
+    {
+        "scripts": ["js/jquery-3.3.1.min.js", "js/todo.js"]
+    },
+    "content_scripts": 
+    [
+        {
+            "js":["js/jquery-3.3.1.min.js", "js/todo.js"],
+            "css": ["css/todo.css"],
+            "matches": [ "http://*/*", "https://*/*"]
+        }
+    ],
 	"browser_action": {
 		"default_title": "Have a good day!",
 		"default_popup": "popup.html"

@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Todo List</title>
+	<title>Be Productive!</title>
 	<link rel="stylesheet" type="text/css" href="css/todo.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css ">
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="container">
-<h1>To-do List <i class="fa fa-pencil"></i></h1>
-<input type="text" placeholder="Add a new Todo">	
-<ul>
-	<li><span><i class="fa fa-trash"></i></span> Learn React</li>
-	<li><span><i class="fa fa-trash"></i></span> Buy Dog Food</li>
-	<li><span><i class="fa fa-trash"></i></span> Exercise</li>
-</ul>
+<div class="container">
+	<h1>To-do List <i class="fa fa-pencil"></i></h1>
+	<input type="text" placeholder="Add a new Todo">	
+	<ul>
+		<li><span><i class="fa fa-trash"></i></span> Learn React</li>
+		<li><span><i class="fa fa-trash"></i></span> Buy Dog Food</li>
+		<li><span><i class="fa fa-trash"></i></span> Exercise</li>
+	</ul>
 </div>
-
+<div class="container-hidden month-list">
+	<h1>This Month<i class="fa fa-pencil"></i></h1>
+	<input type="text" placeholder="Add a new Todo">	
+	<ul>
+		<li><span><i class="fa fa-trash"></i></span> Learn React</li>
+		<li><span><i class="fa fa-trash"></i></span> Buy Dog Food</li>
+		<li><span><i class="fa fa-trash"></i></span> Exercise</li>
+	</ul>
+</div>
+<div class="container-hidden week-list">
+	<h1>This Week<i class="fa fa-pencil"></i></h1>
+	<input type="text" placeholder="Add a new Todo">	
+	<ul>
+		<li><span><i class="fa fa-trash"></i></span> Learn React</li>
+		<li><span><i class="fa fa-trash"></i></span> Buy Dog Food</li>
+		<li><span><i class="fa fa-trash"></i></span> Exercise</li>
+	</ul>
+</div>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/todo.js"></script>
 </body>
 </html>
